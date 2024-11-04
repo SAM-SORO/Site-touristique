@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,500;1,600;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+/* style du header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #add8e6;
+    padding: 30px;
+    width: 100%;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    
+}
+
+.header p{
+    margin-left: 10px;
+}
+
+header .logo{margin-left: 40px;}
+
+header .logo img {width:40px;height:40px;}
+
+ul {
+    list-style: none;
+    display: flex;
+    text-align: right;
+    
+}
+
+ul li {
+    margin-right: 50px;
+}
+
+ul li a {
+    text-decoration: none;   
+    color:black;
+    background-color: #add8e6;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+ul li a:hover {
+    color: white;
+    background-color: rgb(64, 153, 183);
+    
+}
+
+/* style du body de l'acceuil */
+
+.body-accueil{
+    background-image: url(images/image-fond-acceuil.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ac-ivoire{
+    display: flex ;
+    align-items: center;
+    width: 90%;
+    background-color: #84a5a5b6;
+    margin: 30px auto;
+    padding: 40px;
+    box-shadow: 20px 15px 35px rgb(229, 229, 229);
+
+}
+
+.ac-ivoire span{font-weight: 600;}
+.ac-ivoire p{line-height: 35px;}
+
+.embleme{
+    margin-top: 20px;
+    background-color: #84a5a5b6;
+    border: none;
+
+}
+
+
+.tou span{
+    font-weight: 700;
+}
+
+.tou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 248, 248);
+    background-color: #ffffffa0;
+    border-radius: 30px;
+    max-width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #add8e6;
+    margin-top: 20px;
+
+}
+
+/* .tou img{} */
+.tou p{padding: 35px; line-height: 34px; ;}
+
+
+/* Sites touristiques */
+
+
+.container-sites{
+    margin: 40px 40px;
+    max-width: 1800px;
+}
+
+.col-2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 1600px;
+}
+
+.element{
+    /* box-shadow: 0 0 130px 0 rgb(0, 0, 0.2); */
+    box-shadow: 0 0 20px 0 rgb(0.2, 0.1, 0.8);
+    /* box-shadow: 2px 2px 5px 0 rgb(0, 0, 0.4); */
+    transition: transform 0.5s;
+    margin-right: 10px;   
+    width: 750px;
+}
+
+
+.element:hover{
+    transform: translateY(8px);
+}
+
+
+.img-p img{width: 100%; height: 350px;}
+.img-p {position: relative;}
+.img-p p{
+    position: absolute;
+    margin: -69px 0 0 -1px;
+    color: white; 
+    font-size: 24px; 
+    font-weight: 700;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+.detail{
+    width: 600px;
+    padding: 10px;
+}
+
+
+
+.detail-body{
+    background-color:#efefef7e ;
+
+}
+
+/* style de la page de details */
+
+.container-details{
+    max-width: 1100px;
+    margin: 10px auto;
+}
+
+#visiterSiteButton {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+#visiterSiteButton:hover {
+    background-color: darkgray;
+}
+
+
+
+.titre-photos hr{
+    width: 400px;
+    font-weight: 800;
+    border: 2px solid black;
+    margin-left: 10px;
+}
+
+.titre-photos {
+    margin: 20px 0;
+    font-weight: 700;
+    /* flex: 1; Permet au texte de remplir l'espace disponible */
+}
+
+hr{
+    flex: 2; 
+    /* Permet à la ligne horizontale de remplir plus d'espace */
+    margin: 0 20px; 
+    /* Ajoute une marge autour de la ligne horizontale */
+}
+
+.informations-site{
+    margin-top: 5px;
+}
+
+
+/* style de visite */
+
+.container-visite {
+    line-height: 80px;
+    margin: 30px auto;
+    border: 2px solid white;
+    width: 500px;
+    padding: 10px 30px;
+    height: 400px;
+    box-shadow: 0 0 20px 0 rgb(0.2, 0.1, 0.8);
+    margin-top: 50px;
+}
+
+.container-visite button{
+    padding: 10px 30px;
+    background-color: #add8e6;
+    border: 2px solid ;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+.container-visite button:active{
+    transform: scale(0.8);
+}
+
+/* style visite*/
+.container-visite input{
+    height: 30px;
+    text-align: center;
+}
+
+.container-visite h2{
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.visite-body{
+    background-color:#efefef7e ;
+}
+
+.prixP{
+    position: relative;
+    top: -76px;
+    right: -160px;
+}
+
+/* style du footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #534B4B;
+    padding: 50px;
+    margin-top: 60px;
+    color: white;
+    width: 100%;
+
+}
+
+footer .center  {
+    margin-top: 160px;
+    line-height: 50px;
+ 
+}
+
+footer .left{
+    line-height: 50px;
+}
+footer .left a{text-decoration: none; color: #ffff;}
+footer .left a:hover{text-decoration: underline;}
+
+footer hr{
+    width: 800px;
+    border: 2px black solid
+
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    
+}
+
+footer p:hover{
+    text-decoration: underline;
+}
+
+footer .center{
+    position: relative;
+    right: 20%;
+}
+
+footer .right{
+    position: relative;
+    right: 80px;
+}
+footer .right a{
+    display: block;
+    padding: 13px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+footer .right a:hover{
+    text-decoration: underline;
+}
